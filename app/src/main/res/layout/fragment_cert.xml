@@ -1,0 +1,54 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bk"
+    tools:context=".fragment.CertFragment">
+
+    <androidx.cardview.widget.CardView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:layout_margin="15dp"
+        app:cardCornerRadius="8dp">
+        <RelativeLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+            <ImageView
+                android:id="@+id/certificate_html"
+                android:layout_width="350dp"
+                android:layout_height="325dp"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/html" />
+
+            <ImageView
+                android:id="@+id/certificate_js"
+                android:layout_width="350dp"
+                android:layout_height="325dp"
+                android:layout_below="@+id/certificate_html"
+                android:layout_centerHorizontal="true"
+                android:src="@drawable/js" />
+
+            <ImageView
+                android:id="@+id/certificate_php"
+                android:layout_width="350dp"
+                android:layout_height="325dp"
+                android:layout_below="@+id/certificate_js"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/php"/>
+            <ImageView
+                android:id="@+id/certificate_css"
+                android:layout_width="350dp"
+                android:layout_height="325dp"
+                android:layout_below="@+id/certificate_php"
+                android:layout_centerHorizontal="true"
+                android:layout_marginBottom="30dp"
+                android:src="@drawable/css"/>
+        </RelativeLayout>
+    </androidx.cardview.widget.CardView>
+
+
+</ScrollView>

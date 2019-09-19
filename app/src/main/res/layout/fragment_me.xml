@@ -1,0 +1,156 @@
+<?xml version="1.0" encoding="utf-8"?>
+<ScrollView xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="wrap_content"
+    android:orientation="vertical"
+    android:background="@drawable/bk"
+    tools:context=".fragment.MeFragment">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        android:layout_marginBottom="15dp">
+        <ImageView
+            android:layout_width="match_parent"
+            android:layout_height="250dp"
+            android:background="@drawable/green"></ImageView>
+
+        <de.hdodenhof.circleimageview.CircleImageView
+            android:layout_width="100dp"
+            android:layout_height="100dp"
+            android:layout_gravity="center"
+            android:layout_marginTop="-60dp"
+            android:src="@drawable/profile"
+            app:civ_border_color="@android:color/white"
+            app:civ_border_width="2dp"></de.hdodenhof.circleimageview.CircleImageView>
+
+        <androidx.cardview.widget.CardView
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:layout_margin="15dp"
+            app:cardCornerRadius="8dp">
+            <RelativeLayout
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+                <TextView
+                    android:id="@+id/nama"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:text="Putriana Alfatikasari"
+                    android:textAlignment="center"
+                    android:layout_margin="4dp"
+                    android:padding="5dp"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"></TextView>
+                <View
+                    android:id="@+id/garis"
+                    android:layout_below="@+id/nama"
+                    android:layout_width="275dp"
+                    android:layout_centerHorizontal="true"
+                    android:visibility="visible"
+                    android:layout_height="3dp"
+                    android:background="@android:color/darker_gray"/>
+                <TextView
+                    android:id="@+id/kejuruan"
+                    android:layout_below="@+id/garis"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_margin="4dp"
+                    android:padding="5dp"
+                    android:text="Software Engineering"
+                    android:textAlignment="center"
+                    android:textColor="@android:color/black"
+                    android:textSize="24sp"
+                    android:textStyle="bold"></TextView>
+                <TextView
+                    android:id="@+id/about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/kejuruan"
+                    android:padding="5dp"
+                    android:layout_margin="4dp"
+                    android:text="About me"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"></TextView>
+                <TextView
+                    android:id="@+id/text_about"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/about"
+                    android:padding="5dp"
+                    android:layout_margin="4dp"
+                    android:text="My name is Putriana Alfatikasari. I was born in Depok, June 24, 2002.  I live on Jl. Gang Belong, RT007/RW007, Sukamaju Baru, Tapos-Depok. I went to school at an IT-based school called the Taruna Bhakti Vocational School. I majored in Software Engineering.  \n"
+                    android:textSize="14dp"></TextView>
+                <TextView
+                    android:id="@+id/education"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/text_about"
+                    android:padding="5dp"
+                    android:layout_margin="4dp"
+                    android:text="Education"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"></TextView>
+                <TextView
+                    android:id="@+id/taruna"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/education"
+                    android:padding="5dp"
+                    android:layout_margin="4dp"
+                    android:text="Primary School - SDN Sukamaju 4 \nJunior High School - MTS AL Hidayah \nVocatinal High School - Taruna Bhakti"
+                    android:textSize="14dp"></TextView>
+                <TextView
+                    android:id="@+id/hobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/taruna"
+                    android:padding="5dp"
+                    android:layout_margin="4dp"
+                    android:text="Hobby"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"></TextView>
+                <TextView
+                    android:id="@+id/list_hobby"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/hobby"
+                    android:padding="5dp"
+                    android:layout_margin="4dp"
+                    android:text="Badminton \nRunning"
+                    android:textSize="14dp"></TextView>
+                <TextView
+                    android:id="@+id/what"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/list_hobby"
+                    android:padding="5dp"
+                    android:layout_margin="4dp"
+                    android:text="What can I do?"
+                    android:textSize="16dp"
+                    android:textColor="@android:color/black"
+                    android:textStyle="italic"></TextView>
+
+                <TextView
+                    android:id="@+id/list_what"
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_below="@+id/what"
+                    android:layout_marginTop="-3dp"
+                    android:layout_marginBottom="4dp"
+                    android:padding="5dp"
+                    android:text="Make a Simple Design using Adobe Adobe XD \nand Make a Simple Design using Adobe Illustrator \nMake a Simple Web using Laravel"
+                    android:textSize="14dp"></TextView>
+            </RelativeLayout>
+        </androidx.cardview.widget.CardView>
+    </LinearLayout>
+
+
+</ScrollView>
